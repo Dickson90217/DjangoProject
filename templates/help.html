@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>help</title>
+</head>
+<body>
+<form action="/myapp/helpfor/" method = 'post'>
+    {% csrf_token %}
+<input type="submit" value="刊登">
+</form>
+<form action="/myapp/whatadopt/" method = 'post'>
+    {% csrf_token %}
+<input type="submit" value="協尋單">
+</form>
+<form action="/myapp/backtofirst/" method = 'post'>
+        {% csrf_token %}
+<input type="submit" value="回到首頁">
+  </form>
+<form action="/myapp/logout/" method = 'post'>
+        {% csrf_token %}
+    <input type="submit" value="登出">
+</form>
+
+</body>
+</html>

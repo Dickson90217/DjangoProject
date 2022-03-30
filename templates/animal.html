@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animal</title>
+</head>
+<body>
+
+    <p>選一個你想要的寵路類別:</p>
+    <form action="/mywork/animals" method="post">
+                {% csrf_token %}
+    <form>
+      <select id="kind-of-animal" name="animal" >
+      <option value="dog">狗</option>
+      <option value="cat">貓</option>
+      <option value="other">其他品種</option>
+
+      </select>
+        <input type="submit" value="確定" style="width:50px; height:25px;">
+    </form>
+<form>
+    <form action="/myapp/logout/" method = 'post'>
+        {% csrf_token %}
+<input type="submit" value="登出">
+    </form>
+</form>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/mywork/catts" method="post">
+                {% csrf_token %}
+ <form action="/action_page.php"><br><br>
+      <select id="kind-of-animal" name="animal" >
+      <option value="ox">混種貓</option>
+      <option value="od">英國短毛貓</option>
+      </select>
+    <form action="/action_page.php"><br><br>
+      <label for="sex">選一個性別:</label><br><br>
+      <select id="sex" name="sex" >
+      <option value="boy">男</option>
+      <option value="girl">女</option><br><br>
+      </select><br><br>
+      <label for="sex">選一個來源地區:</label><br><br>
+      <select id="form" name="area" style="width:100px; height:20px;" >
+          <optgroup label="北區">
+              <option value="sl">新北樹林區</option>
+              <option value="tw">宜蘭壯圍鄉</option>
+              <option value="LD">宜蘭羅東鎮</option>
+              <option value="JS">宜蘭礁溪鄉</option>
+              <option value="YL">宜蘭市</option>
+              <option value="WG">宜蘭五結鄉</option>
+              <option value="DS">宜蘭冬山鄉</option>
+              <option value="SZ">新北市汐止區</option>
+              <option value="oT">其他</option>
+              <option value="BZZ">北區</option>
+              <option value="WL">新北烏來區</option>
+              <option value="BC">新北板橋區</option>
+               </optgroup>
+          <optgroup label="西區">
+              <option value="FK">新竹湖口鄉</option>
+              <option value="ZB">新竹竹北市</option>
+              <option value="TP">台中市太平鄉</option>
+              <option value="DJ">台中大甲區</option>
+              <option value="HM">彰化和美鎮</option>
+              <option value="LG">彰化鹿港鎮</option>
+              <option value="ZH">彰化市</option>
+              <option value="oT">其他</option>
+               </optgroup>
+          <optgroup label="東區">
+              <option value="oT">其他</option>
+               </optgroup>
+          <optgroup label="南區">
+              <option value="SM">高雄三民區</option>
+              <option value="tn">雲林斗六市</option>
+              <option value="ZT">苗栗造橋鄉</option>
+              <option value="ML">苗栗市</option>
+              <option value="oT">其他</option>
+               </optgroup>
+          <optgroup label="金門">
+            <option value="JS">金沙鎮</option>
+            <option value="JW">金湖鎮</option>
+            <option value="LU">烈嶼鄉</option>
+            <option value="GZZ">金城鎮</option>
+            </optgroup>
+
+      <option value="ZT">南投草屯鎮</option>
+      <option value="LGS">南投鹿谷鄉</option>
+
+
+      <option value="GGZ">苗栗公館鄉</option>
+      <option value="ZNZ">金寧鄉</option>
+      <option value="BNG">板橋區</option>
+      </select><br><br>
+      <input type="submit" value="確定" style="width:50px; height:25px;">
+        </form>
+        </form>
+
+</form>
+</body>
+</html>

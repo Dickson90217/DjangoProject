@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helpfor</title>
+</head>
+<body>
+<form action="/myapp/helppfor/" method = 'post'>
+        {% csrf_token %}
+
+      <label for="petname">寵物名:</label><br>
+      <input type="text" id="petname" name="petname" value=""><br><br>
+      <label for="petsex">寵物性別:</label><br>
+      <input type="text" id="petsex" name="petsex" value=""><br><br>
+      <label for="picture">圖片:</label><br>
+      <input type="text" id="picture" name="picture" value=""><br><br>
+      <label for="when">何時遺失:</label><br>
+      <input type="text" id="when" name="when" value="2022-03-28"><br><br>
+      <label for="where">在哪遺失:</label><br>
+      <input type="text" id="where" name="where" value=""><br><br>
+      <label for="varity">品種:</label><br>
+      <input type="text" id="varity" name="varity" value=""><br><br>
+      <label for="yellowcard">有沒有晶片:</label><br>
+      <input type="text" id="yellowcard" name="yellowcard" value=""><br>
+      <label for="yellowcardnumber">晶片號碼:</label><br>
+      <input type="text" id="yellowcardnumber" name="yellowcardnumber" value="num"><br><br>
+      <label for="phone">電話號碼:</label><br>
+      <input type="text" id="phone" name="phone" value=""><br><br>
+      <label for="special">特徵:</label><br>
+      <input type="text" id="special" name="special" value=""><br><br>
+      <input type="submit" value="送出">
+    </form>
+</body>
+</html>

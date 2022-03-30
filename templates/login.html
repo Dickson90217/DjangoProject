@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+</head>
+<body>
+    <form action="/myapp/loginin/" method = 'post'>
+
+        {% csrf_token %}
+      <label for="fname">First name:</label><br>
+      <input type="text" id="user" name="user" value=""><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="passwd" name="passwd" value=""><br><br>
+      <input type="submit" value="登入">
+    </form>
+    {% load static %}
+    <img src='{% static 'apple.PNG' %}' alt="My image">
+</body>
+</html>
+

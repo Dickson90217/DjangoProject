@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>latto</title>
+</head>
+<body>
+
+{% if role == 'admin' %}
+'<img src="https://th.bing.com/th/id/OIP.-_p5fZMDHb_LggCfupKwBQHaHb?w=193&h=194&c=7&r=0&o=5&pid=1.7" alt="Italian Trulli">' width='100' heigh='100'
+{% elif role == 'user' %}
+<img src="https://th.bing.com/th/id/OIP.YLrHUV8TAUZdCyGxUUgxOwHaHZ?w=193&h=192&c=7&r=0&o=5&pid=1.7" alt="Italian Trulli">' width='100' heigh='100'
+{% endif%}
+  <form action="/myapp/lattoo/" method = 'post'>
+        {% csrf_token %}
+      <label for="fname">year:</label><br>
+      <input type="text" id="year" name="year" value=""><br>
+      <label for="lname">month:</label><br>
+      <input type="text" id="month" name="month" value=""><br><br>
+      <input type="submit" value="查詢">
+    </form>
+</body>
+</html>
